@@ -44,7 +44,13 @@ export default function AppBar({ dir }) {
       <Box sx={{ flexGrow: 1 }}>
         <MuiAppBar position="static">
           <Toolbar>
-            <Box href="/" display="flex" component={Link} sx={{ flexGrow: 1 }}>
+            <Box
+              href="/"
+              display="flex"
+              justifyContent={hidden ? 'center' : 'flex-start'}
+              component={Link}
+              sx={{ flexGrow: 1 }}
+            >
               <img src="/logo.svg" height={48} />
             </Box>
             <Box display={hidden ? 'none' : 'block'}>
