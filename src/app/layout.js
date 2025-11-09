@@ -9,7 +9,7 @@ import { ltrTheme, rtlTheme } from '@/theme';
 import Rtl from '@/components/Rtl';
 
 export const metadata = {
-  title: 'rialir.com: Turkish lira Exchange Rates',
+  title: 'rialir.app: Turkish lira Exchange Rates',
   description: 'rialir | Real-time Turkish lira Exchange Rates',
 };
 

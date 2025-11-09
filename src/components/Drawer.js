@@ -9,13 +9,12 @@ import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import PolicyIcon from '@mui/icons-material/Policy';
-import LiveHelpIcon from '@mui/icons-material/LiveHelp';
 import LanguageIcon from '@mui/icons-material/Language';
 import LiraIcon from '@mui/icons-material/CurrencyLira';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import AddShoppingIcon from '@mui/icons-material/AddShoppingCart';
+import HelpIcon from '@mui/icons-material/HelpOutlineOutlined';
+import PolicyIcon from '@mui/icons-material/LocalPoliceOutlined';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import AccountCircleIcon from '@mui/icons-material/AccountCircleOutlined';
 
 const iOS =
   typeof navigator !== 'undefined' &&
@@ -60,10 +59,7 @@ export default function Drawer({ dir, open, onClose, onOpen, onHide }) {
           </ListItem>
           <Divider />
           <ListItem disablePadding>
-            <ListItemButton
-              target="_blank"
-              href="https://www.rialir.com/account/"
-            >
+            <ListItemButton target="_blank" href="https://app.rialir.com/">
               <ListItemIcon>
                 <AccountCircleIcon />
               </ListItemIcon>
@@ -72,21 +68,9 @@ export default function Drawer({ dir, open, onClose, onOpen, onHide }) {
           </ListItem>
           <Divider />
           <ListItem disablePadding>
-            <ListItemButton
-              target="_blank"
-              href="https://www.rialir.com/account/order/"
-            >
-              <ListItemIcon>
-                <AddShoppingIcon />
-              </ListItemIcon>
-              <ListItemText primary={t('shopping')} />
-            </ListItemButton>
-          </ListItem>
-          <Divider />
-          <ListItem disablePadding>
             <ListItemButton target="_blank" href="https://www.rialir.com/faq/">
               <ListItemIcon>
-                <LiveHelpIcon />
+                <HelpIcon />
               </ListItemIcon>
               <ListItemText primary={t('faq')} />
             </ListItemButton>
